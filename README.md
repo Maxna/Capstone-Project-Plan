@@ -50,6 +50,13 @@ $ npm run start
 
 This app is not interactive yet, Redux and an API are scheduled to come.
 
+## User Story
+
+* As a User I want to be able to browse a list of sports images
+* As a User I want to be able to select a sport to learn more about it
+* As a User I want to be able to return to the list of sports when I am finished with a particular sport
+
+
 ## Built With
 
 * ReactJS
