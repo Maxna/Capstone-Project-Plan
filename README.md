@@ -56,6 +56,9 @@ This app is not interactive yet, Redux and an API are scheduled to come.
 * As a User I want to be able to select a sport to learn more about it
 * As a User I want to be able to return to the list of sports when I am finished with a particular sport
 
+#### Project Layout Illustration
+
+![Component Tree](src/assets/images/Capstone-Project-Layout.png)
 
 ## Built With
 
