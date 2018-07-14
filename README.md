@@ -58,7 +58,7 @@ This app is not interactive yet, Redux and an API are scheduled to come.
 
 #### Project Layout Illustration
 
-![Project Layout|50%](src/assets/images/Capstone-Project-Layout.JPG)
+![Project Layout|20%](src/assets/images/Capstone-Project-Layout.JPG)
 
 ## Built With
 
