@@ -1,11 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Header from './Header';
 import Navbar from './Navbar';
-import Profile from './Profile';
-import Bio from './Bio';
-import SocialFeed from './SocialFeed';
-import FriendsList from './FriendsList';
-import NewFeedPostForm from './NewFeedPostForm';
+import SportsList from './SportsList';
+import SportsCard from './SportsCard';
+import HomePage from './HomePage';
 
 function App(){
   const main = {
@@ -15,21 +14,17 @@ function App(){
     padding: '10px',
   };
 
-
-
   return (
     <div>
-      <Navbar/>
+      <Header/>
       <div style={main}>
         <div>
-          <Profile/>
-          <Bio/>
+          <Navbar/>
         </div>
         <Switch>
-          <Route exact path='/' component={SocialFeed} />
-          <Route path='/newfeedpost' component={NewFeedPostForm} />
+          <Route exact path='/' component={SportsList} />
+          <Route path='/sportsinfo' component={SportsFootball} />
         </Switch>
-        <FriendsList/>
       </div>
     </div>
   );

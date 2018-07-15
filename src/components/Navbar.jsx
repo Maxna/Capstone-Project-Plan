@@ -1,4 +1,5 @@
 import React from 'react';
+import SportsList from './SportsList';
 import { Link } from 'react-router-dom';
 
 function Navbar(){
@@ -27,12 +28,12 @@ function Navbar(){
 `}</style>
     <div style={navbar}>
       <ul style={navTabGroup}>
-        <li Link to='/SportsCard' style={navTab}>Football</li>
-        <li Link to='/SportsCard' style={navTab}>Basketball</li>
-        <li Link to='/SportsCard' style={navTab}>Baseball</li>
-        <li Link to='/SportsCard' style={navTab}>Hockey</li>
-        <li Link to='/SportsCard' style={navTab}>Soccer</li>
-        <li Link to='/SportsCard' style={navTab}>Tennis</li>
+        <Link to='/sportsinfo' style={navTab}>Football</Link>
+        <li style={navTab}>Basketball</li>
+        <li style={navTab}>Baseball</li>
+        <li style={navTab}>Hockey</li>
+        <li style={navTab}>Soccer</li>
+        <li style={navTab}>Tennis</li>
       </ul>
     </div>
 </div>
