@@ -71,12 +71,16 @@ This app is not interactive yet, Redux and an API are scheduled to come.
 * Webpack
 * Babel
 
-## Notes
+## Notes & Errors
 
 ```
-Component Name: 
-ISSUE -  
-SOLUTION - 
+Linter: 
+ISSUE -  Unable to lint fix indentation errors
+SOLUTION - none
+
+React: 
+ISSUE -  Unable to use return key function
+SOLUTION - Disable jsx auto-indentation in settings
 
 ```
 
