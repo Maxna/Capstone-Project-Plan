@@ -23,7 +23,7 @@ function SportsFootball(){
   const buttons = {
     display: 'flex',
     justifyContent: 'space-between'
-  }
+  };
 
   return (
     <div style={sportsFootball}>

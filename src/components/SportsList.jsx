@@ -10,7 +10,7 @@ font-family: sans-serif;
 border: 2px solid #ccc;
 }
 `}</style>
-    <div style={sportsList}>
+    <div className='sportsList'>
       <SportsCard
         name="Football"
         summary="Put the egg shaped ball into the opponents end zone"/>

@@ -1,25 +1,23 @@
 import React from 'react';
-import NavBar from './Navbar';
 import { Link } from 'react-router-dom';
 
 function Header(){
   return (
 <div>
-<style jsx{`
+<style jsx>{`
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: sans-serif;
-  padding: 0 25px;
+  padding: 0 5px;
   min-width: 625px;
   color: #333;
-  border-bottom: 2px solid #ccc;
 }
 .headerItemGroup {
   display: flex;
   list-style: none;
-  padding: 0;
+  padding: 5px;
 }
 .headerItem {
   border: 2px solid #2795dc;
@@ -29,10 +27,12 @@ function Header(){
   font-size: 14px;
 }
 `}</style>
-    <div style={header}>
-      <div style={headerItemGroup}>
-        <button style={headerItem}>Menu</button>
-        <button style={headerItem}>Home</button>
+    <div className='header'>
+      <div className='headerItemGroup'>
+        <button className='headerItem'>Menu</button>
+        <button className='headerItem'>
+        <Link to='/' className='headerItem'>Home</Link>
+        </button>
       </div>
     </div>
 </div>

@@ -30,7 +30,7 @@ function SportsCard(props){
 
   return (
     <div style={sport}>
-      <div style={sportImg} className="img"></div>
+      <div style={sportImg}></div>
       <div>
         <h3 style={h4}>{props.name}</h3>
         <p style={p}>{props.summary}</p>

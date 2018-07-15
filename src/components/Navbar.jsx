@@ -1,5 +1,4 @@
 import React from 'react';
-import SportsList from './SportsList';
 import { Link } from 'react-router-dom';
 
 function Navbar(){
@@ -26,14 +25,16 @@ function Navbar(){
   margin-left: -1px;
 }
 `}</style>
-    <div style={navbar}>
-      <ul style={navTabGroup}>
-        <Link to='/sportsinfo' style={navTab}>Football</Link>
-        <li style={navTab}>Basketball</li>
-        <li style={navTab}>Baseball</li>
-        <li style={navTab}>Hockey</li>
-        <li style={navTab}>Soccer</li>
-        <li style={navTab}>Tennis</li>
+    <div className='navbar'>
+      <ul className='navTabGroup'>
+        <li className='navTab'>
+        <Link to='/sportsinfo'>Football</Link>
+        </li>
+        <li className='navTab'>Basketball</li>
+        <li className='navTab'>Baseball</li>
+        <li className='navTab'>Hockey</li>
+        <li className='navTab'>Soccer</li>
+        <li className='navTab'>Tennis</li>
       </ul>
     </div>
 </div>

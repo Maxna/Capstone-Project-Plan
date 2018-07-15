@@ -3,8 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import Navbar from './Navbar';
 import SportsList from './SportsList';
-import SportsCard from './SportsCard';
-import HomePage from './HomePage';
+import SportsFootball from './SportsFootball';
 
 function App(){
   const main = {
@@ -17,10 +16,10 @@ function App(){
   return (
     <div>
       <Header/>
-      <div style={main}>
         <div>
           <Navbar/>
         </div>
+      <div style={main}>
         <Switch>
           <Route exact path='/' component={SportsList} />
           <Route path='/sportsinfo' component={SportsFootball} />
