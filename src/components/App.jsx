@@ -19,12 +19,10 @@ function App(){
         <div>
           <Navbar/>
         </div>
-      <div style={main}>
         <Switch>
           <Route exact path='/' component={SportsList} />
           <Route path='/sportsinfo' component={SportsFootball} />
         </Switch>
-      </div>
     </div>
   );
 }

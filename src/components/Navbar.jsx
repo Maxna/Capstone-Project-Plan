@@ -6,21 +6,23 @@ function Navbar(){
 <div>
 <style jsx>{`
 .navbar {
-  display: flex;
-  align-items: center;
+text-align: center;
   font-family: sans-serif;
   padding: 0 25px;
   min-width: 625px;
   color: #333;
-  border-bottom: 2px solid #ccc;
 }
 .navTabGroup {
   display: flex;
+justify-content: space-evenly;
+width: 50%;
+margin: auto;
   list-style: none;
-  padding: 0;
+  padding: 10px;
 }
 .navTab {
-  border: 1px solid gray;
+  border: 2px solid #2795dc;
+border-radius: 20px;
   padding: 10px 20px;
   margin-left: -1px;
 }

@@ -6,7 +6,8 @@ function SportsCard(props){
     display: 'flex',
     alignItems: 'flex-start',
     padding: '25px',
-    borderBottom: '1px solid #ccc'
+    border: '1px solid #ccc'
+
   };
 
   const sportImg = {

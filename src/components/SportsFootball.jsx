@@ -28,10 +28,10 @@ function SportsFootball(){
   return (
     <div style={sportsFootball}>
 <div>
-<h2>If I knew more about Football, I would make that information accesible here!</h2>
+<h2>If I knew more about Football, I would put that information here!</h2>
 </div>
         <div style={buttons}>
-          <Link to="/" style={post}>Less Info!</Link>
+          <Link to="/" style={post}>Done!</Link>
         </div>
     </div>
   );

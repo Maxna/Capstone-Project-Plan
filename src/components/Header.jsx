@@ -6,22 +6,21 @@ function Header(){
 <div>
 <style jsx>{`
 .header {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
   font-family: sans-serif;
   padding: 0 5px;
   min-width: 625px;
   color: #333;
+margin-bottom: 20px;
 }
 .headerItemGroup {
   display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 5px;
 }
 .headerItem {
-  border: 2px solid #2795dc;
-  border-radius: 15px;
+  border: 1px solid gray;
   padding: 10px 20px;
   margin-left: 20px;
   font-size: 14px;

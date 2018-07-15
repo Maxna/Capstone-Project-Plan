@@ -6,8 +6,13 @@ function SportsList() {
 <div>
 <style jsx>{`
 .sportsList {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 10px;
+grid-padding: 10px;
+justify-content: space-around;
 font-family: sans-serif;
-border: 2px solid #ccc;
+margin-top: 10px;
 }
 `}</style>
     <div className='sportsList'>
