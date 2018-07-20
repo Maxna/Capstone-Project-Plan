@@ -1,4 +1,4 @@
-# React-Week-Three (Capstone pt.1)
+# React-Week-Four (Capstone pt.2)
 
 This is a rough draft of a sports companion app made as a Capstone project in the Epicodus curriculum. This was made with React with the intention of it looking similar to the final product, but without the functionality of lifting state or calling an API.
 
