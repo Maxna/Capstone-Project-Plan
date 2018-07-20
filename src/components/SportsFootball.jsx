@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import tuscan from '../assets/images/Tuscan.svg';
 
 function SportsFootball(){
   const sportsFootball = {
@@ -26,13 +27,13 @@ function SportsFootball(){
   };
 
   return (
-    <div className='tuscan' style={sportsFootball}>
+    <div style={sportsFootball}>
 <div>
 <h2>If I knew more about Football, I would put that information here!</h2>
 </div>
         <div style={buttons}>
           <Link to="/" style={post}>Done!</Link><br />
-          <img src={Tuscan} alt='tuscanLogo' />
+          <img src={tuscan} alt='tuscanLogo' />
         </div>
     </div>
   );
