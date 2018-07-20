@@ -24,25 +24,22 @@ module.exports = {
 
   devServer: {
    hot: true,
-   contentBase: resolve(__dirname, 'build')
+   contentBase: resolve(__dirname, 'build'),
+   publicPath: '/'
   },
 
   module: {
     rules: [
       {
-        test: /\.svg$/, //Loader still not working, is issuer correct?
-        issuer: /\.css?$/,
-        use: [
-          {
-            loader: 'babel-loader',
-            },
-          {
-            loader: 'react-svg-loader',
-            options: {
-              jsx: true
-            }
+        test: /\.(png|gif|jp(e*)g|svg)$/,
+        // issuer: /\.css?$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 8000,
+            name: 'images/[hash]-[name].[ext]'
           }
-        ]
+        }
       },
       {
         test: /\.jsx?$/,
