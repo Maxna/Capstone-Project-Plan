@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
@@ -19,7 +20,7 @@ function HomePage() {
 <h2>SPORTSBASE</h2>
 </div>
 <div className='button'>
-<button>Continue</button>
+<button><Link to='/allSports'>Continue</Link></button>
 </div>
     </div>
 </div>

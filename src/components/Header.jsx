@@ -35,7 +35,7 @@ width: 32px;
       <div className='headerItemGroup'>
         <button className='headerItem'>Menu</button>
         <button className='headerItem'>
-        <Link to='/' className='headerItem'>
+        <Link to='/allSports' className='headerItem'>
 <img src={tuscan} alt='Home' />
 </Link>
         </button>
