@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./SportsFootball.css";
 
 function SportsFootball(){
   const sportsFootball = {
@@ -7,7 +8,7 @@ function SportsFootball(){
     padding: '10px',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   };
 
   const post = {
@@ -26,12 +27,13 @@ function SportsFootball(){
   };
 
   return (
-    <div style={sportsFootball}>
+    <div className='tuscan' style={sportsFootball}>
 <div>
 <h2>If I knew more about Football, I would put that information here!</h2>
 </div>
         <div style={buttons}>
-          <Link to="/" style={post}>Done!</Link>
+          <Link to="/" style={post}>Done!</Link><br />
+          <img src={Tuscan} alt='tuscanLogo' />
         </div>
     </div>
   );

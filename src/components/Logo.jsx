@@ -1,0 +1,1 @@
+import Tuscan from './../Tuscan';

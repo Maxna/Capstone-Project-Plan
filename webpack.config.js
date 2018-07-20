@@ -30,6 +30,21 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.svg$/, //Loader still not working, is issuer correct?
+        issuer: /\.css?$/,
+        use: [
+          {
+            loader: 'babel-loader',
+            },
+          {
+            loader: 'react-svg-loader',
+            options: {
+              jsx: true
+            }
+          }
+        ]
+      },
+      {
         test: /\.jsx?$/,
         enforce: "pre",
         loader: "eslint-loader",
