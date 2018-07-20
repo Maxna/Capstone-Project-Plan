@@ -2,21 +2,27 @@ import React from 'react';
 
 function HomePage() {
   return (
-    <div id='login'>
 <div>
       <style jsx>{`
   p {
     text-indent: 30pt;
   }
+.login {
+}
+.logo {
+}
+.button {
+}
 `}</style>
-</div>
-<div id='logo'>
+    <div className='login'>
+<div className='logo'>
 <h2>SPORTSBASE</h2>
 </div>
-<div id='button'>
+<div className='button'>
 <button>Continue</button>
 </div>
     </div>
+</div>
 )
 }
 

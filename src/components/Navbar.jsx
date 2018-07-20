@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar(){
+const link = {
+textDecoration: 'none',
+}
   return (
 <div>
 <style jsx>{`
@@ -22,7 +25,7 @@ margin: auto;
 }
 .navTab {
   border: 2px solid #2795dc;
-border-radius: 20px;
+  border-radius: 20px;
   padding: 10px 20px;
   margin-left: -1px;
 }
@@ -30,7 +33,7 @@ border-radius: 20px;
     <div className='navbar'>
       <ul className='navTabGroup'>
         <li className='navTab'>
-        <Link to='/sportsinfo'>Football</Link>
+        <Link style={link} to='/sportsinfo'>Football</Link>
         </li>
         <li className='navTab'>Basketball</li>
         <li className='navTab'>Baseball</li>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import tuscan from '../assets/images/Tuscan.svg';
 
 function Header(){
   return (
@@ -25,12 +26,18 @@ margin-bottom: 20px;
   margin-left: 20px;
   font-size: 14px;
 }
+img {
+height: 32px;
+width: 32px;
+}
 `}</style>
     <div className='header'>
       <div className='headerItemGroup'>
         <button className='headerItem'>Menu</button>
         <button className='headerItem'>
-        <Link to='/' className='headerItem'>Home</Link>
+        <Link to='/' className='headerItem'>
+<img src={tuscan} alt='Home' />
+</Link>
         </button>
       </div>
     </div>
