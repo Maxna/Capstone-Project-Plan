@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import tuscan from '../assets/images/Tuscan.svg';
+import menu from '../assets/images/burgerMenu.svg';
 
 function Header(){
   return (
@@ -33,11 +34,15 @@ width: 32px;
 `}</style>
     <div className='header'>
       <div className='headerItemGroup'>
-        <button className='headerItem'>Menu</button>
         <button className='headerItem'>
-        <Link to='/allSports' className='headerItem'>
-<img src={tuscan} alt='Home' />
-</Link>
+          <Link to='/' className='headerItem'>
+            <img src={menu} alt='Menu' />
+          </Link>
+        </button>
+        <button className='headerItem'>
+          <Link to='/allSports' className='headerItem'>
+            <img src={tuscan} alt='Home' />
+          </Link>
         </button>
       </div>
     </div>

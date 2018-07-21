@@ -26,12 +26,16 @@ function SportsBasketball(){
     text-decoration: none;
     font-size: 14px;
   }
+  img {
+  height: 100px;
+  width: 80px;
+  }
 `}</style>
     <div className='sportsBasketball'>
+          <img src={tuscan} alt='tuscanLogo' />
 <div>
 <h2>If I knew more about Basketball, I would put that information here!</h2>
 </div>
-          <img src={tuscan} alt='tuscanLogo' />
     </div>
 </div>
   );

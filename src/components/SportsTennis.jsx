@@ -26,12 +26,16 @@ function SportsTennis(){
     text-decoration: none;
     font-size: 14px;
   }
+  img {
+  height: 100px;
+  width: 80px;
+  }
 `}</style>
     <div className='sportsTennis'>
+          <img src={tuscan} alt='tuscanLogo' />
 <div>
 <h2>If I knew more about Tennis, I would put that information here!</h2>
 </div>
-          <img src={tuscan} alt='tuscanLogo' />
     </div>
 </div>
   );

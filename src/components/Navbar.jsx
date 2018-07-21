@@ -29,6 +29,8 @@ margin: auto;
   border-radius: 20px;
   padding: 10px 20px;
   margin-left: -1px;
+  background-color: lightgreen;
+
 }
 `}</style>
     <div className='navbar'>
