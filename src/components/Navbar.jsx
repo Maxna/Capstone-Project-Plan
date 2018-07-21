@@ -33,13 +33,23 @@ margin: auto;
     <div className='navbar'>
       <ul className='navTabGroup'>
         <li className='navTab'>
-        <Link style={link} to='/detailSports'>Football</Link>
+          <Link style={link} to='/detailFootball'>Football</Link>
         </li>
-        <li className='navTab'>Basketball</li>
-        <li className='navTab'>Baseball</li>
-        <li className='navTab'>Hockey</li>
-        <li className='navTab'>Soccer</li>
-        <li className='navTab'>Tennis</li>
+        <li className='navTab'>
+          <Link style={link} to='/detailBaseball'>Baseball</Link>
+        </li>
+        <li className='navTab'>
+          <Link style={link} to='/detailBasketball'>Basketball</Link>
+        </li>
+        <li className='navTab'>
+          <Link style={link} to='/detailHockey'>Hockey</Link>
+        </li>
+        <li className='navTab'>
+          <Link style={link} to='/detailSoccer'>Soccer</Link>
+        </li>
+        <li className='navTab'>
+          <Link style={link} to='/detailTennis'>Tennis</Link>
+        </li>
       </ul>
     </div>
 </div>

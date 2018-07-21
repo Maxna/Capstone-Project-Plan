@@ -31,6 +31,9 @@ margin-top: 10px;
       <SportsCard
         name="Soccer"
         summary="Put the ball into the opponents goal"/>
+      <SportsCard
+        name="Tennis"
+        summary="Hit the ball into the opponents square"/>
 </div>
 </div>
 );

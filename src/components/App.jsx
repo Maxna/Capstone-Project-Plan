@@ -5,6 +5,11 @@ import Navbar from './Navbar';
 import HomePage from './HomePage';
 import SportsList from './SportsList';
 import SportsFootball from './SportsFootball';
+import SportsBaseball from './SportsBaseball';
+import SportsBasketball from './SportsBasketball';
+import SportsHockey from './SportsHockey';
+import SportsSoccer from './SportsSoccer';
+import SportsTennis from './SportsTennis';
 import Error404 from './Error404';
 import PropTypes from 'prop-types';
 
@@ -19,15 +24,18 @@ function App(){
   return (
     <div>
       <Header/>
-        <div>
-          <Navbar/>
-        </div>
-        <Switch>
-<Route exact path='/' component={HomePage} />
-          <Route path='/allSports' component={SportsList} />
-          <Route path='/detailSports' component={SportsFootball} />
-<Route component={Error404}/>
-        </Switch>
+      <Navbar/>
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route path='/allSports' component={SportsList} />
+        <Route path='/detailFootball' component={SportsFootball} />
+        <Route path='/detailBaseball' component={SportsBaseball} />
+        <Route path='/detailBasketball' component={SportsBasketball} />
+        <Route path='/detailHockey' component={SportsHockey} />
+        <Route path='/detailSoccer' component={SportsSoccer} />
+        <Route path='/detailTennis' component={SportsTennis} />
+        <Route component={Error404}/>
+      </Switch>
     </div>
   );
 }
