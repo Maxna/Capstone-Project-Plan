@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import baseball from '../assets/images/baseball.svg';
 
 function Navbar(){
 const link = {
@@ -36,7 +37,9 @@ margin: auto;
           <Link style={link} to='/detailFootball'>Football</Link>
         </li>
         <li className='navTab'>
-          <Link style={link} to='/detailBaseball'>Baseball</Link>
+          <Link style={link} to='/detailBaseball'>
+            <img src={baseball} alt='baseballIcon' />
+          </Link>
         </li>
         <li className='navTab'>
           <Link style={link} to='/detailBasketball'>Basketball</Link>
