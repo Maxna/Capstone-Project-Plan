@@ -7,12 +7,12 @@ function SportsList() {
 <style jsx>{`
 .sportsList {
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 3fr 3fr 3fr;
 grid-gap: 10px;
 grid-padding: 10px;
 justify-content: space-around;
 font-family: sans-serif;
-margin-top: 10px;
+margin: 20px;
 }
 `}</style>
     <div className='sportsList'>

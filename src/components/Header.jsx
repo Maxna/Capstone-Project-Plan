@@ -22,7 +22,6 @@ margin-bottom: 20px;
   padding: 5px;
 }
 .headerItem {
-  border: 1px solid gray;
   padding: 10px 20px;
   margin-left: 20px;
   font-size: 14px;
@@ -34,16 +33,16 @@ width: 32px;
 `}</style>
     <div className='header'>
       <div className='headerItemGroup'>
-        <button className='headerItem'>
-          <Link to='/' className='headerItem'>
+        <Link to='/' className='headerItem'>
+          <button className='headerItem'>
             <img src={menu} alt='Menu' />
-          </Link>
-        </button>
-        <button className='headerItem'>
-          <Link to='/allSports' className='headerItem'>
+          </button>
+        </Link>
+        <Link to='/allSports' className='headerItem'>
+          <button className='headerItem'>
             <img src={tuscan} alt='Home' />
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
     </div>
 </div>
