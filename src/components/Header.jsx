@@ -5,8 +5,8 @@ import menu from '../assets/images/burgerMenu.svg';
 
 function Header(){
   return (
-<div>
-<style jsx>{`
+    <div>
+      <style jsx>{`
 .header {
   align-items: center;
   font-family: sans-serif;
@@ -31,21 +31,21 @@ height: 32px;
 width: 32px;
 }
 `}</style>
-    <div className='header'>
-      <div className='headerItemGroup'>
-        <Link to='/' className='headerItem'>
-          <button className='headerItem'>
-            <img src={menu} alt='Menu' />
-          </button>
-        </Link>
-        <Link to='/allSports' className='headerItem'>
-          <button className='headerItem'>
-            <img src={tuscan} alt='Home' />
-          </button>
-        </Link>
+      <div className='header'>
+        <div className='headerItemGroup'>
+          <Link to='/' className='headerItem'>
+            <button className='headerItem'>
+              <img src={menu} alt='Menu' />
+            </button>
+          </Link>
+          <Link to='/allSports' className='headerItem'>
+            <button className='headerItem'>
+              <img src={tuscan} alt='Home' />
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
-</div>
   );
 }
 

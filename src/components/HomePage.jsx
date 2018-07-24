@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import tuscan from '../assets/images/Tuscan.svg';
 
 function HomePage() {
-const text = {
-color: 'black',
-textDecoration: 'none',
-};
+  const text = {
+    color: 'black',
+    textDecoration: 'none',
+  };
   return (
     <div>
       <style jsx>{`
@@ -31,15 +31,15 @@ text-align: center;
 justify-content: center;
 }
 `}</style>
-    <div className='login'>
-      <h2>SPORTSBASE</h2>
-      <img className='logo' src={tuscan} alt='Home' />
-      <button className='button'>
-        <Link to='/allSports' style={text}>CONTINUE</Link>
-      </button>
+      <div className='login'>
+        <h2>SPORTSBASE</h2>
+        <img className='logo' src={tuscan} alt='Home' />
+        <button className='button'>
+          <Link to='/allSports' style={text}>CONTINUE</Link>
+        </button>
+      </div>
     </div>
-  </div>
-)
+  );
 }
 
 export default HomePage;

@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import tuscan from '../assets/images/Tuscan.svg';
 
 function SportsTennis(){
   return (
-<div>
-<style jsx>{`
+    <div>
+      <style jsx>{`
   .sportsTennis {
     background-color: #2d96de;
     padding: 10px;
@@ -31,13 +30,20 @@ function SportsTennis(){
   width: 80px;
   }
 `}</style>
-    <div className='sportsTennis'>
-          <img src={tuscan} alt='tuscanLogo' />
-<div>
-<h2>If I knew more about Tennis, I would put that information here!</h2>
-</div>
+      <div className='sportsTennis'>
+        <img src={tuscan} alt='tuscanLogo' />
+        <div>
+          <h2>Tennis</h2>
+        </div>
+        <img src={tuscan} alt='tuscanLogo' />
+      </div>
+      <div className='post'>
+        <p>Hit the ball into the opponents square</p>
+        <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
     </div>
-</div>
   );
 }
 

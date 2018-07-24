@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import tuscan from '../assets/images/Tuscan.svg';
 
 function SportsBaseball(){
   return (
-<div>
-<style jsx>{`
+    <div>
+      <style jsx>{`
   .sportsBaseball {
     background-color: #2d96de;
     padding: 10px;
@@ -31,13 +30,20 @@ height: 100px;
 width: 80px;
 }
 `}</style>
-    <div className='sportsBaseball'>
-          <img src={tuscan} alt='tuscanLogo' />
-<div>
-<h2>If I knew more about Baseball, I would put that information here!</h2>
-</div>
+      <div className='sportsBaseball'>
+        <img src={tuscan} alt='tuscanLogo' />
+        <div>
+          <h2>Baseball</h2>
+        </div>
+        <img src={tuscan} alt='tuscanLogo' />
+      </div>
+      <div className='post'>
+        <p>Get back to home plate</p>
+        <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
     </div>
-</div>
   );
 }
 

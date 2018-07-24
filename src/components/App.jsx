@@ -11,16 +11,8 @@ import SportsHockey from './SportsHockey';
 import SportsSoccer from './SportsSoccer';
 import SportsTennis from './SportsTennis';
 import Error404 from './Error404';
-import PropTypes from 'prop-types';
 
 function App(){
-  const main = {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr 1fr',
-    gridGap: '10px',
-    padding: '10px',
-  };
-
   return (
     <div>
       <Header/>

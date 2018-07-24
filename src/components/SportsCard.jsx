@@ -2,39 +2,32 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function SportsCard(props){
-  const sport = {
-    display: 'flex',
-    alignItems: 'flex-start',
-    padding: '25px',
-    border: '1px solid #ccc',
-    backgroundColor: 'lightgrey'
-  };
-
-  const sportImg = {
-    height: '50px',
-    width: '50px',
-    minWidth: '50px',
-    borderRadius: '100%',
-    backgroundColor: '#ab6600',
-    marginRight: '20px'
-  };
-
-  const h4 = {
-    margin: '0 0',
-    color: '#333',
-    fontSize: '16px'
-  };
-
-  const p = {
-    margin: '5px 0 5px'
-  };
-
   return (
-    <div style={sport}>
-      <div style={sportImg}></div>
-      <div>
-        <h3 style={h4}>{props.name}</h3>
-        <p style={p}>{props.summary}</p>
+    <div>
+      <style jsx>{`
+        .sport {
+          display: flex;
+          align-items: flex-start;
+          padding: 25px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          background-color: lightgrey;
+          max-width: 400px;
+        }
+        .sportImg {
+          max-height: 100%;
+          max-width: 100%;
+        }
+        img {
+          width: 315px;
+          height: 315px;
+        }
+      `}</style>
+      <div className='sport'>
+        <div className='sportImg'>
+          <img src={props.sportImg} />
+          <h3>{props.name}</h3>
+        </div>
       </div>
     </div>
   );
@@ -42,7 +35,7 @@ function SportsCard(props){
 
 SportsCard.propTypes = {
   name: PropTypes.string,
-  summary: PropTypes.string
+  sportImg: PropTypes.string
 };
 
 export default SportsCard;

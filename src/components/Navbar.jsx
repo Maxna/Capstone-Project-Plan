@@ -8,12 +8,12 @@ import soccer from '../assets/images/soccer.svg';
 import basketball from '../assets/images/basketball.svg';
 
 function Navbar(){
-const link = {
-textDecoration: 'none',
-}
+  const link = {
+    textDecoration: 'none',
+  };
   return (
-<div>
-<style jsx>{`
+    <div>
+      <style jsx>{`
 .navbar {
 text-align: center;
   font-family: sans-serif;
@@ -43,41 +43,41 @@ margin: auto;
   margin-top: 2px;
 }
 `}</style>
-    <div className='navbar'>
-      <ul className='navTabGroup'>
-        <Link style={link} to='/detailFootball'>
-          <li className='navTab'>
-            <img src={football} className='imgHelper' alt='footballIcon' />
-          </li>
-        </Link>
-        <Link style={link} to='/detailBaseball'>
-          <li className='navTab'>
-            <img src={baseball} className='imgHelper' alt='baseballIcon' />
-          </li>
-        </Link>
-        <Link style={link} to='/detailBasketball'>
-          <li className='navTab'>
-            <img src={basketball} className='imgHelper' alt='basketballIcon' />
-          </li>
-        </Link>
-        <Link style={link} to='/detailHockey'>
-          <li className='navTab'>
-            <img src={hockey} className='imgHockey' alt='hockeyIcon' />
-          </li>
-        </Link>
-        <Link style={link} to='/detailSoccer'>
-          <li className='navTab'>
-            <img src={soccer} className='imgHelper' alt='soccerIcon' />
-          </li>
-        </Link>
-        <Link style={link} to='/detailTennis'>
-          <li className='navTab'>
-            <img src={tennis} className='imgHelper' alt='tennisIcon' />
-          </li>
-        </Link>
-      </ul>
+      <div className='navbar'>
+        <ul className='navTabGroup'>
+          <Link style={link} to='/detailFootball'>
+            <li className='navTab'>
+              <img src={football} className='imgHelper' alt='footballIcon' />
+            </li>
+          </Link>
+          <Link style={link} to='/detailBaseball'>
+            <li className='navTab'>
+              <img src={baseball} className='imgHelper' alt='baseballIcon' />
+            </li>
+          </Link>
+          <Link style={link} to='/detailBasketball'>
+            <li className='navTab'>
+              <img src={basketball} className='imgHelper' alt='basketballIcon' />
+            </li>
+          </Link>
+          <Link style={link} to='/detailHockey'>
+            <li className='navTab'>
+              <img src={hockey} className='imgHockey' alt='hockeyIcon' />
+            </li>
+          </Link>
+          <Link style={link} to='/detailSoccer'>
+            <li className='navTab'>
+              <img src={soccer} className='imgHelper' alt='soccerIcon' />
+            </li>
+          </Link>
+          <Link style={link} to='/detailTennis'>
+            <li className='navTab'>
+              <img src={tennis} className='imgHelper' alt='tennisIcon' />
+            </li>
+          </Link>
+        </ul>
+      </div>
     </div>
-</div>
   );
 }
 
