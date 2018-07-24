@@ -19,6 +19,7 @@ function SportsCard(props){
           max-width: 100%;
         }
         img {
+          object-fit: cover;
           width: 315px;
           height: 315px;
         }

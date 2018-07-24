@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.jsx",
   "scripts": {
-    "build": "webpack",
-    "local": "webpack-dev-server",
     "start": "webpack-dev-server --open",
     "lint": "eslint src/** src/**/**; exit 0",
     "lint-fix": "eslint src/**/*.jsx --fix; exit 0"

@@ -23,8 +23,8 @@ margin-bottom: 20px;
 }
 .headerItem {
   padding: 10px 20px;
-  margin-left: 20px;
   font-size: 14px;
+  cursor: pointer;
 }
 img {
 height: 32px;
