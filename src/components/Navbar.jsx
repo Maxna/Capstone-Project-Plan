@@ -26,18 +26,24 @@ function Navbar(){
   padding: 10px;
 }
 .navTab {
-  border: 2px solid #2795dc;
+  border: 2px solid lightgreen;
   border-radius: 20px;
   padding: 10px 20px;
   margin-left: -1px;
-  background-color: lightgreen;
   height: 65%;
+}
+.navTab:hover {
+  background-color: palegreen;
+}
+.navTab:active {
+  background-color: lightgreen;
 }
 .imgHockey {
   margin-top: 8px;
 }
 .imgHelper {
-  margin-top: 2px;
+  align-items: center;
+  justify-content: center;
 }
 `}</style>
       <div className='navbar'>

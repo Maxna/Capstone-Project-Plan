@@ -1,7 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
-import Navbar from './Navbar';
 import HomePage from './HomePage';
 import SportsList from './SportsList';
 import SportsFootball from './SportsFootball';
@@ -10,13 +9,19 @@ import SportsBasketball from './SportsBasketball';
 import SportsHockey from './SportsHockey';
 import SportsSoccer from './SportsSoccer';
 import SportsTennis from './SportsTennis';
+import Footer from './Footer';
+import NewFeedbackForm from './NewFeedbackForm';
 import Error404 from './Error404';
 
 function App(){
   return (
     <div>
+      <style jsx global>{`
+        body{
+          background-color: aliceblue;
+        }
+      `}</style>
       <Header/>
-      <Navbar/>
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/allSports' component={SportsList} />
@@ -26,8 +31,10 @@ function App(){
         <Route path='/detailHockey' component={SportsHockey} />
         <Route path='/detailSoccer' component={SportsSoccer} />
         <Route path='/detailTennis' component={SportsTennis} />
+        <Route path='/newfeedbackform' component={NewFeedbackForm} />
         <Route component={Error404}/>
       </Switch>
+      <Footer/>
     </div>
   );
 }
