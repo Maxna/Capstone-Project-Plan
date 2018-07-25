@@ -11,7 +11,6 @@ function Header(){
   align-items: center;
   font-family: sans-serif;
   padding: 0 5px;
-  min-width: 625px;
   color: #333;
 margin-bottom: 20px;
 }

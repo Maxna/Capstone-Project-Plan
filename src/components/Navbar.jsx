@@ -15,17 +15,13 @@ function Navbar(){
     <div>
       <style jsx>{`
 .navbar {
-text-align: center;
-  font-family: sans-serif;
-  padding: 0 25px;
-  min-width: 625px;
-  color: #333;
+  display: flex;
+  justify-content: stretch;
 }
 .navTabGroup {
   display: flex;
-justify-content: space-evenly;
-width: 50%;
-margin: auto;
+  justify-content: center;
+  margin: auto;
   list-style: none;
   padding: 10px;
 }
@@ -35,6 +31,7 @@ margin: auto;
   padding: 10px 20px;
   margin-left: -1px;
   background-color: lightgreen;
+  height: 65%;
 }
 .imgHockey {
   margin-top: 8px;

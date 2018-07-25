@@ -7,7 +7,6 @@ function SportsCard(props){
       <style jsx>{`
         .sport {
           display: flex;
-          align-items: flex-start;
           padding: 25px;
           border: 1px solid #ccc;
           border-radius: 10px;
@@ -20,8 +19,9 @@ function SportsCard(props){
         }
         img {
           object-fit: cover;
-          width: 315px;
-          height: 315px;
+          object-position: 50% 20%;
+          width: 100%;
+          height: 400px;
         }
       `}</style>
       <div className='sport'>

@@ -12,14 +12,12 @@ function SportsList() {
     <div>
       <style jsx>{`
 .sportsList {
-display: grid;
-grid-template-columns: 2fr 2fr;
-grid-gap: 10px;
-grid-padding: 10px;
-justify-content: space-around;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: stretch;
 font-family: sans-serif;
 margin: 20px;
-align-items: center;
 }
 `}</style>
       <div className='sportsList'>
