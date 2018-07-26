@@ -1,15 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FeedbackLog from './FeedbackLog';
-import tuscan from '../assets/images/Tuscan.svg';
+import NewFeedback from './NewFeedback';
+import PropTypes from 'prop-types';
 
-function Footer(){
+function Footer(props){
+
   const text = {
     textDecoration: 'none',
-  }
+  };
   const block = {
+  };
+  const log = {
+    display: 'flex',
+    fontFamily: 'sans-serif',
+    marginLeft: '10px',
+    height: '200px',
+  };
+  const sample = {
 
-  }
+  };
   return (
     <div>
       <style jsx>{`
@@ -42,10 +51,32 @@ function Footer(){
       <div className='post'>
         <Link to='newfeedbackform' style={text}>Submit</Link>
       </div>
-      <FeedbackLog />
+    <div style={log}>
+      <div style={sample}>
+        <NewFeedback
+          ticket="Not Enough Golf!"
+          tip="If you could include a section about golf that would be awesome!"/>
+      </div>
+      <div style={sample}>
+        <NewFeedback
+          ticket="Help"
+          tip="I am going to a boxing match, but I don't know anything about boxing!"/>
+      </div>
+      <div>
+        {props.feedbackList.map((feedback) =>
+          <NewFeedback ticket={feedback.ticket}
+            tip={feedback.tip}
+            key={feedback.id}/>
+        )}
+      </div>
+    </div>
     </div>
     </div>
   );
 }
+
+Footer.propTypes={
+feedbackList: PropTypes.array
+};
 
 export default Footer;

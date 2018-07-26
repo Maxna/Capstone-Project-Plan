@@ -10,10 +10,26 @@ import SportsHockey from './SportsHockey';
 import SportsSoccer from './SportsSoccer';
 import SportsTennis from './SportsTennis';
 import Footer from './Footer';
-import NewFeedbackForm from './NewFeedbackForm';
+import NewFeedbackControl from './NewFeedbackControl';
 import Error404 from './Error404';
 
-function App(){
+class App extends React.Component {
+
+constructor(props) {
+super(props);
+this.state = {
+masterFeedbackList: []
+};
+this.handleAddingNewFeedbackToList = this.handleAddingNewFeedbackToList.bind(this);
+}
+
+handleAddingNewFeedbackToList(newFeedback){
+var newMasterFeedbackList = this.state.masterFeedbackList.slice();
+newMasterFeedbackList.push(newFeedback);
+this.setState({masterFeedbackList: newMasterFeedbackList});
+}
+
+render(){
   return (
     <div>
       <style jsx global>{`
@@ -38,12 +54,15 @@ function App(){
         <Route path='/detailHockey' component={SportsHockey} />
         <Route path='/detailSoccer' component={SportsSoccer} />
         <Route path='/detailTennis' component={SportsTennis} />
-        <Route path='/newfeedbackform' component={NewFeedbackForm} />
+        <Route path='/newfeedback' render={()=><NewFeedbackControl onNewFeedbackCreation={this.handleAddingNewFeedbackToList} />} />
+        <Route path='/feedbackList' render={()=><Footer feedbackList={this.state.masterFeedbackList} />} />
         <Route component={Error404}/>
       </Switch>
       <Footer/>
     </div>
   );
+}
+
 }
 
 export default App;

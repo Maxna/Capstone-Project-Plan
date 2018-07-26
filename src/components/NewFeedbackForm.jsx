@@ -1,8 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { v4 } from 'uuid';
 
 
-function NewFeedbackForm(){
+function NewFeedbackForm(props){
+let _ticket=null;
+let _tip=null;
+
+function handleNewFeedbackFormSubmission(event){
+event.preventDefault();
+props.onNewFeedbackCreation({ticket: _ticket.value, tip: _tip.value, id: v4()});
+_ticket.value = '';
+_tip.value = '';
+}
+
   const newFeedback = {
     backgroundColor: '#2d96de',
     padding: '10px',
@@ -54,24 +66,31 @@ function NewFeedbackForm(){
   const buttons = {
     display: 'flex',
     justifyContent: 'space-between'
-  }
+  };
 
   return (
     <div className='newFeedBack'>
-      <form style={form}>
-        <div style={buttons}>
-          <button style={post} type='submit'>Post!</button>
-          <Link to="/" style={nevermind}>Nevermind!</Link>
-        </div>
-        <hr/>
+      <form onSubmit={handleNewFeedbackFormSubmission} style={form}>
         <input
           style={input}
           type='text'
-          id='post'
-          placeholder='Educate the people!'/>
+          id='ticket'
+          placeholder='Reason for ticket...'
+          ref={(input) => {_ticket=input;}}/>
+        <input
+          style={input}
+          type='text'
+          id='tip'
+          placeholder='What did we miss?'
+          ref={(input) => {_tip=input;}}/>
+        <button type='submit'>Leave Feedback</button>
       </form>
     </div>
   );
 }
+
+NewFeedbackForm.propTypes={
+  onNewFeedbackCreation: PropTypes.func
+};
 
 export default NewFeedbackForm;
