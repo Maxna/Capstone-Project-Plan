@@ -1,11 +1,11 @@
 import React from 'react';
 import SportsCard from './SportsCard';
-import footballImg from '../assets/images/touchdown.jpeg'
-import baseballImg from '../assets/images/dodgers.jpg'
-import basketballImg from '../assets/images/basketball.jpg'
-import tennisImg from '../assets/images/halep.jpg'
-import soccerImg from '../assets/images/whitney.jpg'
-import hockeyImg from '../assets/images/gretzky.jpg'
+import footballImg from '../assets/images/touchdown.jpeg';
+import baseballImg from '../assets/images/dodgers.jpg';
+import basketballImg from '../assets/images/basketball.jpg';
+import tennisImg from '../assets/images/halep.jpg';
+import soccerImg from '../assets/images/whitney.jpg';
+import hockeyImg from '../assets/images/gretzky.jpg';
 
 function SportsList() {
   return (
@@ -33,7 +33,7 @@ function SportsList() {
           name="Baseball"/>
         <SportsCard
           sportImg={hockeyImg}
-          name="Hockey!"/>
+          name="Hockey"/>
         <SportsCard
           sportImg={soccerImg}
           name="Soccer"/>

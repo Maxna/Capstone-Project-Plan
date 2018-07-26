@@ -6,10 +6,12 @@ import tuscan from '../assets/images/Tuscan.svg';
 function Footer(){
   const text = {
     textDecoration: 'none',
-  }
+    textAlign: 'center',
+  };
   const block = {
-
-  }
+    display: 'flex',
+    justifyContent: 'center',
+  };
   return (
     <div>
       <style jsx>{`
@@ -32,6 +34,13 @@ function Footer(){
     border: none;
     text-decoration: none;
     font-size: 14px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  h2 {
+    text-align: center;
   }
 `}</style>
       <div style={block} />
@@ -39,11 +48,11 @@ function Footer(){
         <div>
           <h2>Feedback</h2>
         </div>
-      <div className='post'>
-        <Link to='newfeedbackform' style={text}>Submit</Link>
+        <div className='post'>
+          <Link to='newfeedbackform' style={text}>Submit</Link>
+        </div>
+        <FeedbackLog />
       </div>
-      <FeedbackLog />
-    </div>
     </div>
   );
 }

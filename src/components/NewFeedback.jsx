@@ -16,7 +16,7 @@ function NewFeedback(props){
 
   return (
     <div style={logBox}>
-        <h3 style={p}>{props.ticket}</h3>
+      <h3 style={p}>{props.ticket}</h3>
       <div>
         <p>{props.tip}</p>
       </div>

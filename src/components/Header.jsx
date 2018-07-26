@@ -7,7 +7,7 @@ import menu from '../assets/images/burgerMenu.svg';
 function Header(){
   const main = {
     backgroundColor: 'skyblue',
-  }
+  };
   return (
     <div style={main}>
       <style jsx>{`

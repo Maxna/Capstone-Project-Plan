@@ -3,26 +3,27 @@ import NewFeedback from './NewFeedback';
 
 function FeedbackLog(){
   const log = {
-    display: 'flex',
+    display: 'grid',
     fontFamily: 'sans-serif',
     marginLeft: '10px',
     height: '200px',
+    gridTemplateColumns: '1fr 1fr 1fr',
   };
   const feedLog = {
-    height: '50px',
+    maxWidth: '300px',
   };
 
   return (
     <div style={log}>
       <NewFeedback
-        ticket="React @Epicodus"
-        tip="Looking forward to school today!"/>
+        ticket="More Golf"
+        tip="I wish this app had golf instructions"/>
       <NewFeedback
-        ticket="Don't Drink and Code"
-        tip="Oh no! My code is a mess!"/>
+        ticket="Help"
+        tip="I am going to a boxing match and I don't know anything about boxing!"/>
       <NewFeedback
-        ticket="Farewell Avanti"
-        tip="I'm gonna miss the frozen treats!"/>
+        ticket="cool app"
+        tip="I liked the section on baseball"/>
     </div>
   );
 }

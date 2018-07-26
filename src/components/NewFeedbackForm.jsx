@@ -48,16 +48,17 @@ function NewFeedbackForm(){
     padding: '5px 15px',
     border: 'none',
     fontSize: '24px',
-    textAlign: 'center'
+    textAlign: 'center',
+    width: '1330px',
   };
 
   const buttons = {
     display: 'flex',
     justifyContent: 'space-between'
-  }
+  };
 
   return (
-    <div className='newFeedBack'>
+    <div style={newFeedback}>
       <form style={form}>
         <div style={buttons}>
           <button style={post} type='submit'>Post!</button>
@@ -68,7 +69,7 @@ function NewFeedbackForm(){
           style={input}
           type='text'
           id='post'
-          placeholder='Educate the people!'/>
+          placeholder='Put your suggestions here.'/>
       </form>
     </div>
   );
