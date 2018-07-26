@@ -1,4 +1,4 @@
-# React-Week-Four (Capstone pt.2)
+# React-Week-Five (Capstone pt.3g)
 
 This is a rough draft of a sports companion app made as a Capstone project in the Epicodus curriculum. This was made with React with the intention of it looking similar to the final product, but without the functionality of lifting state or calling an API.
 
@@ -74,11 +74,11 @@ This app is not interactive yet, Redux and an API are scheduled to come.
 ## Notes & Errors
 
 ```
-Linter: 
+Linter:
 ISSUE -  Unable to lint fix indentation errors
 SOLUTION - none
 
-React: 
+React:
 ISSUE -  Unable to use return key function
 SOLUTION - Disable jsx auto-indentation in settings
 
