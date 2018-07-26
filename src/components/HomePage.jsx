@@ -8,7 +8,6 @@ function HomePage() {
     textDecoration: 'none',
   };
   const main = {
-    backgroundColor: 'aliceblue',
   };
   return (
     <div style={main}>
@@ -16,7 +15,6 @@ function HomePage() {
           .login {
             display: grid;
             justify-content: center;
-
           }
           .logo {
             height: 200px;
@@ -45,6 +43,13 @@ function HomePage() {
             text-align: center;
             justify-content: center;
           }
+          .welcome {
+            font-family: monospace;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 80px;
+            font-size: 16px;
+          }
 `}</style>
       <div className='login'>
         <h2>SPORTSBASE</h2>
@@ -56,6 +61,7 @@ function HomePage() {
           <button className='button2' style={text}>Continue without Signing In</button>
         </Link>
       </div>
+      <p className='welcome'>"The best app for an introduction to traditional sports."</p>
     </div>
   );
 }

@@ -5,26 +5,26 @@ function SportsFootball(){
   return (
     <div>
       <style jsx>{`
-  .sportsFootball {
-    background-color: beige;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .post {
-    background-color: aliceblue;
-    color: black;
-    border-radius: 1px;
-    padding: 5px 15px;
-    border: none;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  img {
-  height: 100px;
-  width: 80px;
-  }
+          .sportsFootball {
+            background-color: beige;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .post {
+            background-color: aliceblue;
+            color: black;
+            border-radius: 1px;
+            padding: 5px 15px;
+            border: none;
+            text-decoration: none;
+            font-size: 14px;
+          }
+          img {
+            height: 100px;
+            width: 80px;
+          }
 `}</style>
       <div className='sportsFootball'>
         <img src={tuscan} alt='tuscanLogo' />

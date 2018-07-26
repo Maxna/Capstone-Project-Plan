@@ -7,35 +7,34 @@ function Footer(){
   const text = {
     textDecoration: 'none',
   }
+  const block = {
+
+  }
   return (
     <div>
       <style jsx>{`
   .footerMain {
-    position: relative;
+    position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
+    right: 0;
+    padding: 1rem;
     color: white;
     background-color: #1a1a1a;
-    padding: 10px;
-    display: flex;
     align-items: center;
     justify-content: center;
   }
   .post {
     background-color: palegreen;
-    color: white;
+    color: black;
     border-radius: 5px;
     padding: 5px 15px;
     border: none;
     text-decoration: none;
     font-size: 14px;
   }
-  img {
-    height: 100px;
-    width: 80px;
-  }
 `}</style>
+      <div style={block} />
       <div className='footerMain'>
         <div>
           <h2>Feedback</h2>

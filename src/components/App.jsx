@@ -19,6 +19,13 @@ function App(){
       <style jsx global>{`
         body{
           background-color: aliceblue;
+          margin: 0px;
+          padding-bottom: 0rem;
+          position: relative;
+          min-height: 100%;
+        }
+        html{
+          height: 100%;
         }
       `}</style>
       <Header/>

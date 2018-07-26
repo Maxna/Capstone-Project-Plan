@@ -7,6 +7,7 @@ function NewFeedback(props){
     border: '1px solid #ccc',
     height: '120px',
     marginLeft: '10px',
+    marginTop: '10px',
   };
 
   const p = {

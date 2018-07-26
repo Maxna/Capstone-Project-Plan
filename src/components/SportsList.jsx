@@ -11,14 +11,15 @@ function SportsList() {
   return (
     <div>
       <style jsx>{`
-.sportsList {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: stretch;
-font-family: sans-serif;
-margin: 20px;
-}
+          .sportsList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            font-family: sans-serif;
+            padding-bottom: 350px;
+            margin-top: 50px;
+          }
 `}</style>
       <div className='sportsList'>
         <SportsCard

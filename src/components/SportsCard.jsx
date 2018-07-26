@@ -8,14 +8,15 @@ function SportsCard(props){
         .sport {
           display: flex;
           padding: 25px;
+          margin: 2px;
           border: 1px solid #ccc;
-          border-radius: 10px;
+          border-radius: 0px;
           background-color: lightgrey;
           max-width: 400px;
         }
         .sportImg {
-          max-height: 100%;
-          max-width: 100%;
+          height: 100%;
+          width: 100%;
         }
         img {
           object-fit: cover;
@@ -23,11 +24,17 @@ function SportsCard(props){
           width: 100%;
           height: 400px;
         }
+        .tag {
+          text-align: center;
+          font-weight: bold;
+          font-family: monospace;
+          font-size: 20px;
+        }
       `}</style>
       <div className='sport'>
         <div className='sportImg'>
           <img src={props.sportImg} />
-          <h3>{props.name}</h3>
+          <p className='tag'>{props.name}</p>
         </div>
       </div>
     </div>

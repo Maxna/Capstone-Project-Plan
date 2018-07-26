@@ -12,20 +12,17 @@ function Header(){
     <div style={main}>
       <style jsx>{`
 .header {
-  align-items: center;
   font-family: sans-serif;
-  padding: 0 5px;
   margin-bottom: 15px;
 }
 .headerItemGroup {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding: 5px;
+  padding: 8px;
 }
 .headerItem {
-  padding: 10px 20px;
-  font-size: 14px;
+  padding: 10px 15px;
   cursor: pointer;
   background-color: beige;
 }
