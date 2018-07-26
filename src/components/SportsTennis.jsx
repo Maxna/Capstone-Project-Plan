@@ -34,9 +34,17 @@ function SportsTennis(){
         <img src={tuscan} alt='tuscanLogo' />
       </div>
       <div className='post'>
-        <p>Hit the ball into the opponents square</p>
+        <h4>Summary</h4>
         <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Insert summary here
+        </p>
+        <h4>General Rules</h4>
+        <p>
+    Insert rules here
+        </p>
+        <h4>Overview</h4>
+        <p>
+    Insert brief overview here
         </p>
       </div>
     </div>
